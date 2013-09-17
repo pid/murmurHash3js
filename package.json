@@ -1,7 +1,7 @@
 {
     "name": "murmurhash3js",
     "version": "2.1.2",
-    "homepage": "https://pid.github.com/murmurHash3js/",
+    "homepage": "http://pid.github.io/murmurHash3js/",
     "description": "A javascript implementation of MurmurHash3's x86 hashing algorithms.",
     "keywords": [
             "murmurhash3",

@@ -40,6 +40,7 @@
 * [Karan Lyons](https://github.com/karanlyons/) (@karanlyons) ([Version 2.1.1](https://github.com/karanlyons/murmurHash3.js/blob/03bac51479581ab53e3b224ac474f4df69a89029/murmurHash3.js) )
 
 ## Contributors
+## Maintainer
 
 * [Sascha Droste](https://github.com/pid/) (@pid)
 
