@@ -1,1 +1,1 @@
-module.exports = require('./lib/murmurHash3');
+module.exports = require('./lib/murmurHash3js');
