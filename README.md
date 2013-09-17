@@ -1,7 +1,17 @@
-# MurmurHash3.js
+# MurmurHash3js
 **A javascript implementation of [MurmurHash3](http://code.google.com/p/smhasher/source/browse/trunk/MurmurHash3.cpp?spec=svn145&r=144)'s hashing algorithms.**
 
+# Installation
+> npm install murmurHash3js
+
 ## Usage
+```javascript
+    // browser
+        <script type="text/javascript" src="murmurHash3js.min.js"></script>
+    // server
+        var murmurHash3 = require("murmurHash3js");
+```
+
 ```javascript
 // Return a 32bit hash as a unsigned int:
 > murmurHash3.x86.hash32("I will not buy this record, it is scratched.")
@@ -22,7 +32,7 @@
 > murmurHash3
   undefined
 > somethingCompletelyDifferent.version
-  "2.1.1"
+  "2.1.2" // get version
 ```
 
 ## License
