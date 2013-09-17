@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Murmurhash3js : A javascript implementation of MurmurHash3's x86 hashing algorithms." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Murmurhash3js</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/pid/murmurHash3js">View on GitHub</a>
+
+          <h1 id="project_title">Murmurhash3js</h1>
+          <h2 id="project_tagline">A javascript implementation of MurmurHash3's x86 hashing algorithms.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/pid/murmurHash3js/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/pid/murmurHash3js/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="murmurhash3js" class="anchor" href="#murmurhash3js"><span class="octicon octicon-link"></span></a>MurmurHash3js</h1>
+
+<p><strong>A javascript implementation of <a href="http://code.google.com/p/smhasher/source/browse/trunk/MurmurHash3.cpp?spec=svn145&amp;r=144">MurmurHash3</a>'s hashing algorithms.</strong></p>
+
+<h1>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h1>
+
+<blockquote>
+<p>npm install murmurhash3js</p>
+</blockquote>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<div class="highlight highlight-javascript"><pre>    <span class="c1">// browser</span>
+        <span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text/javascript"</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"murmurhash3js.min.js"</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+    <span class="c1">// server</span>
+        <span class="kd">var</span> <span class="nx">murmurHash3</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"murmurhash3js"</span><span class="p">);</span>
+</pre></div>
+
+<div class="highlight highlight-javascript"><pre><span class="c1">// Return a 32bit hash as a unsigned int:</span>
+<span class="o">&gt;</span> <span class="nx">murmurHash3</span><span class="p">.</span><span class="nx">x86</span><span class="p">.</span><span class="nx">hash32</span><span class="p">(</span><span class="s2">"I will not buy this record, it is scratched."</span><span class="p">)</span>
+  <span class="mi">2832214938</span>
+
+<span class="c1">// Return a 128bit hash as a unsigned hex:</span>
+<span class="o">&gt;</span> <span class="nx">murmurHash3</span><span class="p">.</span><span class="nx">x86</span><span class="p">.</span><span class="nx">hash128</span><span class="p">(</span><span class="s2">"I will not buy this tobacconist's, it is scratched."</span><span class="p">)</span>
+  <span class="s2">"ef3f78669b5b7ba200f3f98e889adeaf"</span>
+<span class="o">&gt;</span> <span class="nx">murmurHash3</span><span class="p">.</span><span class="nx">x64</span><span class="p">.</span><span class="nx">hash128</span><span class="p">(</span><span class="s2">"I will not buy this tobacconist's, it is scratched."</span><span class="p">)</span>
+  <span class="s2">"d30654abbd8227e367d73523f0079673"</span>
+
+<span class="c1">// Specify a seed (defaults to 0):</span>
+<span class="o">&gt;</span> <span class="nx">murmurHash3</span><span class="p">.</span><span class="nx">x86</span><span class="p">.</span><span class="nx">hash32</span><span class="p">(</span><span class="s2">"My hovercraft is full of eels."</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
+  <span class="mi">2520298415</span>
+
+<span class="c1">// Rebind murmurHash3:</span>
+<span class="o">&gt;</span> <span class="nx">somethingCompletelyDifferent</span> <span class="o">=</span> <span class="nx">murmurHash3</span><span class="p">.</span><span class="nx">noConflict</span><span class="p">()</span>
+<span class="o">&gt;</span> <span class="nx">murmurHash3</span>
+  <span class="kc">undefined</span>
+<span class="o">&gt;</span> <span class="nx">somethingCompletelyDifferent</span><span class="p">.</span><span class="nx">version</span>
+  <span class="s2">"2.1.2"</span> <span class="c1">// get version</span>
+</pre></div>
+
+<h2>
+<a name="author" class="anchor" href="#author"><span class="octicon octicon-link"></span></a>Author</h2>
+
+<ul>
+<li>
+<a href="https://github.com/karanlyons/">Karan Lyons</a> (<a href="https://github.com/karanlyons" class="user-mention">@karanlyons</a>) (<a href="https://github.com/karanlyons/murmurHash3.js/blob/03bac51479581ab53e3b224ac474f4df69a89029/murmurHash3.js">Version 2.1.1</a> )</li>
+</ul><h2>
+<a name="contributors" class="anchor" href="#contributors"><span class="octicon octicon-link"></span></a>Contributors</h2>
+
+<ul>
+<li>
+<a href="https://github.com/pid/">Sascha Droste</a> (<a href="https://github.com/pid" class="user-mention">@pid</a>)</li>
+</ul><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Copyright © 2012-2013 Karan Lyons</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and non-infringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Murmurhash3js maintained by <a href="https://github.com/pid">pid</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
