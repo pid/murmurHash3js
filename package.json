@@ -1,6 +1,6 @@
 {
- "name": "murmurHash3",
- "version": "2.1.1",
+ "name": "murmurHash3js",
+ "version": "2.1.2",
  "description": "A javascript implementation of MurmurHash3's x86 hashing algorithms.",
  "keywords": [
    "murmurhash3",

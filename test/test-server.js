@@ -1,10 +1,10 @@
 /* global describe,it,require */
 
-describe('murmurHash3', function() {
+describe('murmurHash3js', function() {
 	'use strict';
 
 	it('x86', function(done) {
-		var murmurHash3 = require('../lib/murmurHash3');
+		var murmurHash3 = require('../lib/murmurHash3js');
 
 		murmurHash3.x86.hash32("I will not buy this record, it is scratched.")
 			.should.be.equal(2832214938);
@@ -49,7 +49,7 @@ describe('murmurHash3', function() {
 	});
 
 	it('x64', function(done) {
-		var murmurHash3 = require('../lib/murmurHash3');
+		var murmurHash3 = require('../lib/murmurHash3js');
 
 		murmurHash3.x64.hash128("I will not buy this record, it is scratched.")
 			.should.be.equal("c382657f9a06c49d4a71fdc6d9b0d48f");
