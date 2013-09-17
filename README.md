@@ -37,7 +37,7 @@
 
 ## Author
 
-* [Karan Lyons](https://github.com/karanlyons/) (@karanlyons) 
+* [Karan Lyons](https://github.com/karanlyons/) (@karanlyons) ([Version 2.1.1](https://github.com/karanlyons/murmurHash3.js/tree/03bac51479581ab53e3b224ac474f4df69a89029) )
 
 ## Contributors
 
