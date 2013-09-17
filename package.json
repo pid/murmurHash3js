@@ -1,39 +1,41 @@
 {
- "name": "murmurHash3js",
- "version": "2.1.2",
- "description": "A javascript implementation of MurmurHash3's x86 hashing algorithms.",
- "keywords": [
-   "murmurhash3",
-   "hash"
- ],
- "author": {
-  "name": "Karan Lyons"
- },
- "license": "MIT",
- "bugs": {
-  "url": "https://github.com/karanlyons/murmurHash3.js/issues"
- },
- "repository": {
-  "type": "git",
-  "url": "git://github.com/karanlyons/murmurHash3.js.git"
- },
- "main": "index.js",
- "directories": {
-  "example": "example",
-  "test": "test"
- },
- "scripts": {
-  "test": "mocha"
- },
- "devDependencies": {
-  "grunt": "~0.4.1",
-  "grunt-text-replace": "~0.3.7",
-  "grunt-release": "~0.5.1",
-  "grunt-contrib-uglify": "~0.2.4",
-  "grunt-contrib-watch": "~0.5.3",
-  "grunt-contrib-jshint": "~0.6.4",
-  "grunt-bumpup": "~0.3.1",
-  "mocha": "~1.13.0",
-  "should": "~1.3.0"
- }
+    "name": "murmurHash3js",
+    "version": "2.1.2",
+    "description": "A javascript implementation of MurmurHash3's x86 hashing algorithms.",
+    "keywords": [
+            "murmurhash3",
+            "hash"
+    ],
+    "author": {
+        "name": "Karan Lyons",
+        "email": "karan@karanlyons.com",
+        "url": "http://karanlyons.com"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/karanlyons/murmurHash3.js/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/karanlyons/murmurHash3.js.git"
+    },
+    "main": "index.js",
+    "directories": {
+        "example": "example",
+        "test": "test"
+    },
+    "scripts": {
+        "test": "mocha"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-text-replace": "~0.3.7",
+        "grunt-release": "~0.5.1",
+        "grunt-contrib-uglify": "~0.2.4",
+        "grunt-contrib-watch": "~0.5.3",
+        "grunt-contrib-jshint": "~0.6.4",
+        "grunt-bumpup": "~0.3.1",
+        "mocha": "~1.13.0",
+        "should": "~1.3.0"
+    }
 }
