@@ -1,6 +1,7 @@
 {
     "name": "murmurhash3js",
     "version": "2.1.2",
+    "homepage": "https://pid.github.com/murmurHash3js/",
     "description": "A javascript implementation of MurmurHash3's x86 hashing algorithms.",
     "keywords": [
             "murmurhash3",
@@ -12,10 +13,11 @@
         "url": "http://karanlyons.com"
     },
     "contributors": [{
-        "name": "Sascha Droste",
-        "email": "sascha.droste@gmail.com",
-        "url": "https://github.com/pid/"
-    }],
+            "name": "Sascha Droste",
+            "email": "sascha.droste@gmail.com",
+            "url": "https://github.com/pid/"
+        }
+    ],
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/pid/murmurHash3js/issues"

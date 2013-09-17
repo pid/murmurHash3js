@@ -2,14 +2,14 @@
 **A javascript implementation of [MurmurHash3](http://code.google.com/p/smhasher/source/browse/trunk/MurmurHash3.cpp?spec=svn145&r=144)'s hashing algorithms.**
 
 # Installation
-> npm install murmurHash3js
+> npm install murmurhash3js
 
 ## Usage
 ```javascript
     // browser
-        <script type="text/javascript" src="murmurHash3js.min.js"></script>
+        <script type="text/javascript" src="murmurhash3js.min.js"></script>
     // server
-        var murmurHash3 = require("murmurHash3js");
+        var murmurHash3 = require("murmurhash3js");
 ```
 
 ```javascript
@@ -37,7 +37,7 @@
 
 ## Author
 
-* [Karan Lyons](https://github.com/karanlyons/) (@karanlyons) ([Version 2.1.1](https://github.com/karanlyons/murmurHash3.js/tree/03bac51479581ab53e3b224ac474f4df69a89029) )
+* [Karan Lyons](https://github.com/karanlyons/) (@karanlyons) ([Version 2.1.1](https://github.com/karanlyons/murmurHash3.js/blob/03bac51479581ab53e3b224ac474f4df69a89029/murmurHash3.js) )
 
 ## Contributors
 
