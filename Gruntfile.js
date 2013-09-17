@@ -44,8 +44,8 @@ module.exports = function(grunt) {
 					from: /'version': '\d{1,2}\.\d{1,3}\.\d{1,4}',/g,
 					to: "'version': '<%= pkg.version %>',"
 				}, {
-					from: /murmurHash3.js v\d{1,2}\.\d{1,3}\.\d{1,3}/g,
-					to: "murmurHash3.js v<%= pkg.version %>"
+					from: /murmurHash3js.js v\d{1,2}\.\d{1,3}\.\d{1,3}/g,
+					to: "murmurHash3js.js v<%= pkg.version %>"
 				}]
 			},
 			readme: {
