@@ -1,4 +1,5 @@
-var murmurHash3 = require("../lib/murmurHash3");
+var murmurHash3 = require("../lib/");
+// var murmurHash3 = require("murmurhash3js");
 
 console.log("x86:");
 console.log(murmurHash3.x86.hash32("I will not buy this record, it is scratched."));
