@@ -4,6 +4,8 @@
 # Installation
 > npm install murmurhash3js
 
+> bower install murmurhash3js
+
 ## Usage
 ```javascript
     // browser
