@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title></title>
+    <script src="../murmurhash3js.min.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+    foo
+    <br>
+    <div id="foo"></div>
+
+<script>
+    el = document.getElementById('foo');
+    el.innerHTML = murmurHash3.x86.hash32("To Be or Not to Be.");
+</script>
+
+</body>
+</html>
