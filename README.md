@@ -32,7 +32,7 @@
 > murmurHash3
   undefined
 > somethingCompletelyDifferent.version
-  "2.1.2" // get version
+  "2.1.4" // get version
 ```
 
 ## Author

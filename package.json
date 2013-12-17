@@ -1,49 +1,47 @@
 {
-  "name": "murmurhash3js",
-  "version": "2.1.3",
-  "homepage": "http://pid.github.io/murmurHash3js/",
-  "description": "A javascript implementation of MurmurHash3's x86 hashing algorithms.(Browser&Server)",
-  "keywords": [
-    "murmurhash3",
-    "hash"
-  ],
-  "author": {
-    "name": "Karan Lyons",
-    "email": "karan@karanlyons.com",
-    "url": "http://karanlyons.com"
-  },
-  "contributors": [
-    {
-      "name": "Sascha Droste",
-      "email": "sascha.droste@gmail.com",
-      "url": "https://github.com/pid/"
-    }
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/pid/murmurHash3js/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/pid/murmurHash3js.git"
-  },
-  "main": "index.js",
-  "directories": {
-    "example": "example",
-    "test": "test"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-text-replace": "~0.3.7",
-    "grunt-release": "~0.6.0",
-    "grunt-contrib-uglify": "~0.2.4",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-jshint": "~0.7.2",
-    "grunt-bumpup": "~0.4.2",
-    "mocha": "~1.15.1",
-    "should": "~2.1.1"
-  }
+ "name": "murmurhash3js",
+ "version": "2.1.4",
+ "homepage": "http://pid.github.io/murmurHash3js/",
+ "description": "A javascript implementation of MurmurHash3's x86 hashing algorithms.(Browser&Server)",
+ "keywords": [
+  "murmurhash3",
+  "hash"
+ ],
+ "author": {
+  "name": "Karan Lyons",
+  "email": "karan@karanlyons.com",
+  "url": "http://karanlyons.com"
+ },
+ "contributors": [{
+  "name": "Sascha Droste",
+  "email": "sascha.droste@gmail.com",
+  "url": "https://github.com/pid/"
+ }],
+ "license": "MIT",
+ "bugs": {
+  "url": "https://github.com/pid/murmurHash3js/issues"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git://github.com/pid/murmurHash3js.git"
+ },
+ "main": "index.js",
+ "directories": {
+  "example": "example",
+  "test": "test"
+ },
+ "scripts": {
+  "test": "mocha"
+ },
+ "devDependencies": {
+  "grunt": "~0.4.1",
+  "grunt-text-replace": "~0.3.7",
+  "grunt-release": "~0.6.0",
+  "grunt-contrib-uglify": "~0.2.4",
+  "grunt-contrib-watch": "~0.5.3",
+  "grunt-contrib-jshint": "~0.7.2",
+  "grunt-bumpup": "~0.4.2",
+  "mocha": "~1.15.1",
+  "should": "~2.1.1"
+ }
 }
