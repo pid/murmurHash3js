@@ -42,22 +42,20 @@ module.exports = function(grunt) {
                 src: '<%= buildSourceFile %>',
                 overwrite: true,
                 replacements: [{
-                        from: /'version': '\d{1,2}\.\d{1,3}\.\d{1,4}',/g,
-                        to: "'version': '<%= pkg.version %>',"
-                    }, {
-                        from: /murmurHash3js.js v\d{1,2}\.\d{1,3}\.\d{1,3}/g,
-                        to: "murmurHash3js.js v<%= pkg.version %>"
-                    }
-                ]
+                    from: /'version': '\d{1,2}\.\d{1,3}\.\d{1,4}',/g,
+                    to: "'version': '<%= pkg.version %>',"
+                }, {
+                    from: /murmurHash3js.js v\d{1,2}\.\d{1,3}\.\d{1,3}/g,
+                    to: "murmurHash3js.js v<%= pkg.version %>"
+                }]
             },
             readme: {
                 src: 'README.md',
                 overwrite: true,
                 replacements: [{
-                        from: /"\d{1,2}\.\d{1,3}\.\d{1,4}" \/\/ get version/g,
-                        to: "\"<%= pkg.version %>\" \/\/ get version"
-                    }
-                ]
+                    from: /"\d{1,2}\.\d{1,3}\.\d{1,4}" \/\/ get version/g,
+                    to: "\"<%= pkg.version %>\" \/\/ get version"
+                }]
             }
         },
 
@@ -72,9 +70,9 @@ module.exports = function(grunt) {
         var done = this.async();
         require('child_process')
             .exec('mocha', function(err, stdout) {
-            grunt.log.write(stdout);
-            done(err);
-        });
+                grunt.log.write(stdout);
+                done(err);
+            });
     });
 
     grunt.event.on('watch ', function(action, filepath) {
@@ -89,6 +87,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-text-replace');
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'jshint', 'mocha', 'replace']);
+    grunt.registerTask('default', ['replace', 'jshint', 'mocha', 'uglify']);
 
 };
