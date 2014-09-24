@@ -12,13 +12,11 @@
     "email": "karan@karanlyons.com",
     "url": "http://karanlyons.com"
   },
-  "contributors": [
-    {
-      "name": "Sascha Droste",
-      "email": "sascha.droste@gmail.com",
-      "url": "https://github.com/pid/"
-    }
-  ],
+  "contributors": [{
+    "name": "Sascha Droste",
+    "email": "sascha.droste@gmail.com",
+    "url": "https://github.com/pid/"
+  }],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pid/murmurHash3js/issues"
@@ -45,5 +43,8 @@
     "grunt-text-replace": "~0.3.7",
     "mocha": "^1.21.4",
     "should": "^4.0.4"
+  },
+  "engines": {
+    "node": ">=0.10.0"
   }
 }
