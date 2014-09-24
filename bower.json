@@ -1,6 +1,6 @@
 {
  "name": "murmurHash3js",
- "version": "2.1.4",
+ "version": "2.1.5",
  "description": "A javascript implementation of MurmurHash3's x86 hashing algorithms.(Browser&Server)",
  "main": "murmurhash3js.min.js",
  "homepage": "http://pid.github.io/murmurHash3js/",
@@ -9,10 +9,12 @@
   "type": "git",
   "url": "git://github.com/pid/murmurHash3js.git"
  },
- "licenses": [{
-  "type": "MIT",
-  "url": "https://raw.github.com/pid/murmurHash3js/master/LICENSE"
- }],
+ "licenses": [
+  {
+   "type": "MIT",
+   "url": "https://raw.github.com/pid/murmurHash3js/master/LICENSE"
+  }
+ ],
  "ignore": [
   "node_modules"
  ]

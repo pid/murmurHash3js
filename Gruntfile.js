@@ -69,7 +69,7 @@ module.exports = function(grunt) {
     grunt.registerTask('mocha', 'run mocha', function() {
         var done = this.async();
         require('child_process')
-            .exec('mocha', function(err, stdout) {
+            .exec('npm test', function(err, stdout) {
                 grunt.log.write(stdout);
                 done(err);
             });
