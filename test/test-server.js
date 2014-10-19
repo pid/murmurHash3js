@@ -9,7 +9,7 @@ describe('murmurHash3js', function() {
 		murmurHash3.x86.hash32("I will not buy this record, it is scratched.")
 			.should.be.equal(2832214938);
 		murmurHash3.x86.hash128("I will not buy this tobacconist's, it is scratched.")
-			.should.be.equal("ef3f78669b5b7ba200f3f98e889adeaf");
+			.should.be.equal("9b5b7ba2ef3f7866889adeaf00f3f98e");
 		murmurHash3.x86.hash32("My hovercraft is full of eels.", 0)
 			.should.be.equal(2953494853);
 		murmurHash3.x86.hash32("My hovercraft is full of eels.", 25)
@@ -27,23 +27,23 @@ describe('murmurHash3js', function() {
 		murmurHash3.x86.hash32("", 1).should.be.equal(1364076727);
 
 		murmurHash3.x86.hash128("").should.be.equal("00000000000000000000000000000000");
-		murmurHash3.x86.hash128("0").should.be.equal("a5eb34f80ab2409ea5eb34f8a5eb34f8");
-		murmurHash3.x86.hash128("01").should.be.equal("674f3b210f87acb4674f3b21674f3b21");
-		murmurHash3.x86.hash128("012").should.be.equal("4c13d78ecd94fea54c13d78e4c13d78e");
-		murmurHash3.x86.hash128("0123").should.be.equal("485d3536dc378fea485d3536485d3536");
-		murmurHash3.x86.hash128("01234").should.be.equal("7b3b211635c5b3ee00ae108800ae1088");
-		murmurHash3.x86.hash128("012345").should.be.equal("6ce1944bdb26dc75f825536af825536a");
-		murmurHash3.x86.hash128("0123456").should.be.equal("86d15c02b708d0a1495d053b495d053b");
-		murmurHash3.x86.hash128("01234567").should.be.equal("92160402aa22bf8463b83c5e63b83c5e");
-		murmurHash3.x86.hash128("012345678").should.be.equal("75d48126571b5f674ca675dcd0205c30");
-		murmurHash3.x86.hash128("0123456789").should.be.equal("2e528b330017a61e57a11235a5443f20");
-		murmurHash3.x86.hash128("0123456789a").should.be.equal("921f15e438a2ed0fa971884f2caa7f97");
-		murmurHash3.x86.hash128("0123456789ab").should.be.equal("b6982a7ecfaa93f904d3d08f53412b5d");
-		murmurHash3.x86.hash128("0123456789abc").should.be.equal("cc6d9d01c970af1dfc11eee3dd00c683");
-		murmurHash3.x86.hash128("0123456789abcd").should.be.equal("c0a5114d6f34d20a63f51794ae0d83c5");
-		murmurHash3.x86.hash128("0123456789abcde").should.be.equal("4d0818c03c76c46da78673faadd433da");
-		murmurHash3.x86.hash128("0123456789abcdef").should.be.equal("36aed30afb7d4409572b3bfd48ad1d9b");
-		murmurHash3.x86.hash128("", 1).should.be.equal("54d201b988c4adec54d201b954d201b9");
+		murmurHash3.x86.hash128("0").should.be.equal("0ab2409ea5eb34f8a5eb34f8a5eb34f8");
+		murmurHash3.x86.hash128("01").should.be.equal("0f87acb4674f3b21674f3b21674f3b21");
+		murmurHash3.x86.hash128("012").should.be.equal("cd94fea54c13d78e4c13d78e4c13d78e");
+		murmurHash3.x86.hash128("0123").should.be.equal("dc378fea485d3536485d3536485d3536");
+		murmurHash3.x86.hash128("01234").should.be.equal("35c5b3ee7b3b211600ae108800ae1088");
+		murmurHash3.x86.hash128("012345").should.be.equal("db26dc756ce1944bf825536af825536a");
+		murmurHash3.x86.hash128("0123456").should.be.equal("b708d0a186d15c02495d053b495d053b");
+		murmurHash3.x86.hash128("01234567").should.be.equal("aa22bf849216040263b83c5e63b83c5e");
+		murmurHash3.x86.hash128("012345678").should.be.equal("571b5f6775d48126d0205c304ca675dc");
+		murmurHash3.x86.hash128("0123456789").should.be.equal("0017a61e2e528b33a5443f2057a11235");
+		murmurHash3.x86.hash128("0123456789a").should.be.equal("38a2ed0f921f15e42caa7f97a971884f");
+		murmurHash3.x86.hash128("0123456789ab").should.be.equal("cfaa93f9b6982a7e53412b5d04d3d08f");
+		murmurHash3.x86.hash128("0123456789abc").should.be.equal("c970af1dcc6d9d01dd00c683fc11eee3");
+		murmurHash3.x86.hash128("0123456789abcd").should.be.equal("6f34d20ac0a5114dae0d83c563f51794");
+		murmurHash3.x86.hash128("0123456789abcde").should.be.equal("3c76c46d4d0818c0add433daa78673fa");
+		murmurHash3.x86.hash128("0123456789abcdef").should.be.equal("fb7d440936aed30a48ad1d9b572b3bfd");
+		murmurHash3.x86.hash128("", 1).should.be.equal("88c4adec54d201b954d201b954d201b9");
 
 		done();
 	});
