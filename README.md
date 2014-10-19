@@ -48,6 +48,8 @@
 
 * [Sascha Droste](https://github.com/pid/) (@pid)
 
+## [Changelog](https://github.com/pid/murmurHash3js/blob/master/CHANGELOG.md)
+
 ## MIT License
 
 Copyright © 2012-2014 Karan Lyons, Sascha Droste
