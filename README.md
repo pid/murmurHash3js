@@ -39,16 +39,13 @@
   "3.0.0" // get version
 ```
 
-## Author
+## Authors
 
-* [Karan Lyons](https://github.com/karanlyons/) (@karanlyons)
+* [Karan Lyons](https://github.com/karanlyons/)
+* [Sascha Droste](https://github.com/pid/)
 
-## Contributors
-## Maintainer
-
-* [Sascha Droste](https://github.com/pid/) (@pid)
-
-## [Changelog](https://github.com/pid/murmurHash3js/blob/master/CHANGELOG.md)
+## Changlog
+ [CHANGLELOG.md](https://github.com/pid/murmurHash3js/blob/master/CHANGELOG.md)
 
 ## MIT License
 
