@@ -7,7 +7,9 @@ module.exports = function(grunt) {
 
         uglify: {
             options: {
-                banner: '/* <%= pkg.name %> v<%= pkg.version %> (c) 2012-<%= grunt.template.today("yyyy") %> <%= pkg.author.name %> | Maintainer: <%= pkg.contributors[0].name %> <%= pkg.homepage %> */',
+                banner: '/* <%= pkg.name %> v<%= pkg.version %> MIT License\n' +
+                        '(c) 2012-<%= grunt.template.today("yyyy") %> <%= pkg.author.name %> \n' +
+                        'Maintainer: <%= pkg.contributors[0].name %> <%= pkg.homepage %> */\n',
                 max_line_length: 500
             },
             build: {

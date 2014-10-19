@@ -1,4 +1,4 @@
-var murmurHash3 = require("../lib/");
+var murmurHash3 = require("../");
 // var murmurHash3 = require("murmurhash3js");
 
 console.log("x86:");
@@ -15,7 +15,3 @@ console.log(murmurHash3.x64.hash128("I will not buy this tobacconist's, it is sc
 console.log(murmurHash3.x64.hash128("My hovercraft is full of eels.", 0));
 console.log(murmurHash3.x64.hash128("My hovercraft is full of eels.", 25));
 console.log(murmurHash3.x64.hash128("My hovercraft is full of eels.", 128));
-
-
-
-

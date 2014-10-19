@@ -1,6 +1,6 @@
 {
  "name": "murmurHash3js",
- "version": "2.1.6",
+ "version": "3.0.0",
  "description": "A javascript implementation of MurmurHash3's x86 hashing algorithms.(Browser&Server)",
  "main": "murmurhash3js.min.js",
  "homepage": "http://pid.github.io/murmurHash3js/",
