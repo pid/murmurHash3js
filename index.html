@@ -2,9 +2,9 @@
 <html>
 
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Murmurhash3js : A javascript implementation of MurmurHash3's x86 hashing algorithms." />
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Murmurhash3js : A javascript implementation of MurmurHash3&#39;s x86 hashing algorithms.">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
@@ -19,7 +19,7 @@
           <a id="forkme_banner" href="https://github.com/pid/murmurHash3js">View on GitHub</a>
 
           <h1 id="project_title">Murmurhash3js</h1>
-          <h2 id="project_tagline">A javascript implementation of MurmurHash3's x86 hashing algorithms.</h2>
+          <h2 id="project_tagline">A javascript implementation of MurmurHash3&#39;s x86 hashing algorithms.</h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/pid/murmurHash3js/zipball/master">Download this project as a .zip file</a>
@@ -31,7 +31,9 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h1>
+        <p><a href="http://badge.fury.io/js/murmurhash3js"><img src="https://badge.fury.io/js/murmurhash3js.png" alt="NPM version"></a> <a href="https://travis-ci.org/pid/murmurhash3js"><img src="https://travis-ci.org/pid/murmurHash3js.png" alt="Build Status"></a></p>
+
+<h1>
 <a name="murmurhash3js" class="anchor" href="#murmurhash3js"><span class="octicon octicon-link"></span></a>MurmurHash3js</h1>
 
 <p><strong>A javascript implementation of <a href="http://code.google.com/p/smhasher/source/browse/trunk/MurmurHash3.cpp?spec=svn145&amp;r=144">MurmurHash3</a>'s hashing algorithms.</strong></p>
@@ -60,7 +62,7 @@
 
 <span class="c1">// Return a 128bit hash as a unsigned hex:</span>
 <span class="o">&gt;</span> <span class="nx">murmurHash3</span><span class="p">.</span><span class="nx">x86</span><span class="p">.</span><span class="nx">hash128</span><span class="p">(</span><span class="s2">"I will not buy this tobacconist's, it is scratched."</span><span class="p">)</span>
-  <span class="s2">"ef3f78669b5b7ba200f3f98e889adeaf"</span>
+  <span class="s2">"9b5b7ba2ef3f7866889adeaf00f3f98e"</span>
 <span class="o">&gt;</span> <span class="nx">murmurHash3</span><span class="p">.</span><span class="nx">x64</span><span class="p">.</span><span class="nx">hash128</span><span class="p">(</span><span class="s2">"I will not buy this tobacconist's, it is scratched."</span><span class="p">)</span>
   <span class="s2">"d30654abbd8227e367d73523f0079673"</span>
 
@@ -73,7 +75,7 @@
 <span class="o">&gt;</span> <span class="nx">murmurHash3</span>
   <span class="kc">undefined</span>
 <span class="o">&gt;</span> <span class="nx">somethingCompletelyDifferent</span><span class="p">.</span><span class="nx">version</span>
-  <span class="s2">"2.1.4"</span> <span class="c1">// get version</span>
+  <span class="s2">"3.0.0"</span> <span class="c1">// get version</span>
 </pre></div>
 
 <h2>
@@ -81,8 +83,10 @@
 
 <ul>
 <li>
-<a href="https://github.com/karanlyons/">Karan Lyons</a> (<a href="https://github.com/karanlyons" class="user-mention">@karanlyons</a>) (<a href="https://github.com/karanlyons/murmurHash3.js/blob/03bac51479581ab53e3b224ac474f4df69a89029/murmurHash3.js">Version 2.1.1</a> )</li>
-</ul><h2>
+<a href="https://github.com/karanlyons/">Karan Lyons</a> (<a href="https://github.com/karanlyons" class="user-mention">@karanlyons</a>)</li>
+</ul>
+
+<h2>
 <a name="contributors" class="anchor" href="#contributors"><span class="octicon octicon-link"></span></a>Contributors</h2>
 
 <h2>
@@ -91,18 +95,18 @@
 <ul>
 <li>
 <a href="https://github.com/pid/">Sascha Droste</a> (<a href="https://github.com/pid" class="user-mention">@pid</a>)</li>
-</ul><h2>
-<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+</ul>
 
-<p>Copyright © 2012-2013 Karan Lyons</p>
+<h2>
+<a name="mit-license" class="anchor" href="#mit-license"><span class="octicon octicon-link"></span></a>MIT License</h2>
+
+<p>Copyright © 2012-2014 Karan Lyons, Sascha Droste</p>
 
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
 
 <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
 
 <p>The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and non-infringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.</p>
-
-<p><a href="https://bitdeli.com/free" title="Bitdeli Badge"><img src="https://d2weczhvl823v0.cloudfront.net/pid/murmurhash3js/trend.png" alt="Bitdeli Badge"></a></p>
       </section>
     </div>
 
