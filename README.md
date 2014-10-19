@@ -1,4 +1,4 @@
-[![NPM version](https://badge.fury.io/js/murmurhash3js.png)](http://badge.fury.io/js/murmurhash3js) [![Build Status](https://travis-ci.org/pid/murmurhash3js.png)](https://travis-ci.org/pid/murmurhash3js)
+[![NPM version](https://badge.fury.io/js/murmurhash3js.png)](http://badge.fury.io/js/murmurhash3js) [![Build Status](https://travis-ci.org/pid/murmurHash3js.png)](https://travis-ci.org/pid/murmurhash3js)
 
 # MurmurHash3js
 **A javascript implementation of [MurmurHash3](http://code.google.com/p/smhasher/source/browse/trunk/MurmurHash3.cpp?spec=svn145&r=144)'s hashing algorithms.**
