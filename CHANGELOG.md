@@ -1,7 +1,7 @@
 Changelog
 =========
 
-- v3.0.0 ([Bugfix](https://github.com/karanlyons/murmurHash3.js/pull/2)) equals to ([Version 2.1.6](https://github.com/karanlyons/murmurHash3.js/blob/c1778f75792abef7bdd74bc85d2d4e1a3d25cfe9/murmurHash3.js ))
+- v3.0.0 [Bugfix](https://github.com/karanlyons/murmurHash3.js/pull/2) this version is equal to [Version 2.1.6](https://github.com/karanlyons/murmurHash3.js/blob/c1778f75792abef7bdd74bc85d2d4e1a3d25cfe9/murmurHash3.js )
 - v2.1.6 removed testing for Node.js v0.8
 - v2.1.5 udate devDependencies
 - v2.1.4 add to bower.io; last version running with Node.js v0.8.x
