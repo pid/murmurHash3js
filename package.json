@@ -1,6 +1,6 @@
 {
   "name": "murmurhash3js",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "homepage": "http://pid.github.io/murmurHash3js/",
   "description": "A javascript implementation of MurmurHash3's x86 hashing algorithms.(Browser&Server)",
   "keywords": [
@@ -38,13 +38,13 @@
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-bumpup": "^0.6.2",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-jshint": "^0.11.1",
+    "grunt-contrib-uglify": "^0.8.1",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-release": "^0.7.0",
-    "grunt-text-replace": "^0.3.12",
-    "mocha": "^1.21.5",
-    "should": "^4.1.0"
+    "grunt-release": "^0.12.0",
+    "grunt-text-replace": "^0.4.0",
+    "mocha": "^2.2.1",
+    "should": "^5.2.0"
   },
   "engines": {
     "node": ">=0.10.0"
