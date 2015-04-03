@@ -1,45 +1,33 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Murmurhash3js : A javascript implementation of MurmurHash3&#39;s x86 hashing algorithms.">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Murmurhash3js</title>
+    <meta charset="UTF-8">
+    <title>Murmurhash3js by pid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Murmurhash3js</h1>
+      <h2 class="project-tagline">A javascript implementation of MurmurHash3&#39;s x86 hashing algorithms.</h2>
+      <a href="https://github.com/pid/murmurHash3js" class="btn">View on GitHub</a>
+      <a href="https://github.com/pid/murmurHash3js/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/pid/murmurHash3js/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/pid/murmurHash3js">View on GitHub</a>
-
-          <h1 id="project_title">Murmurhash3js</h1>
-          <h2 id="project_tagline">A javascript implementation of MurmurHash3&#39;s x86 hashing algorithms.</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/pid/murmurHash3js/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/pid/murmurHash3js/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p><a href="http://badge.fury.io/js/murmurhash3js"><img src="https://badge.fury.io/js/murmurhash3js.png" alt="NPM version"></a> <a href="https://travis-ci.org/pid/murmurhash3js"><img src="https://travis-ci.org/pid/murmurHash3js.png" alt="Build Status"></a></p>
+    <section class="main-content">
+      <p><a href="http://badge.fury.io/js/murmurhash3js"><img src="https://badge.fury.io/js/murmurhash3js.png" alt="NPM version"></a> <a href="https://travis-ci.org/pid/murmurhash3js"><img src="https://travis-ci.org/pid/murmurHash3js.png" alt="Build Status"></a></p>
 
 <h1>
-<a name="murmurhash3js" class="anchor" href="#murmurhash3js"><span class="octicon octicon-link"></span></a>MurmurHash3js</h1>
+<a id="murmurhash3js" class="anchor" href="#murmurhash3js" aria-hidden="true"><span class="octicon octicon-link"></span></a>MurmurHash3js</h1>
 
 <p><strong>A javascript implementation of <a href="http://code.google.com/p/smhasher/source/browse/trunk/MurmurHash3.cpp?spec=svn145&amp;r=144">MurmurHash3</a>'s hashing algorithms.</strong></p>
 
 <h1>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h1>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h1>
 
 <blockquote>
 <p>npm install murmurhash3js</p>
@@ -48,71 +36,69 @@
 </blockquote>
 
 <h2>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
-<div class="highlight highlight-javascript"><pre>    <span class="c1">// browser</span>
-        <span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text/javascript"</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"murmurhash3js.min.js"</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
-    <span class="c1">// server</span>
-        <span class="kd">var</span> <span class="nx">murmurHash3</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"murmurhash3js"</span><span class="p">);</span>
-</pre></div>
+<div class="highlight highlight-javascript"><pre>    <span class="pl-c">// browser</span>
+        <span class="pl-k">&lt;</span>script type<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> src<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>murmurhash3js.min.js<span class="pl-pds">"</span></span><span class="pl-k">&gt;&lt;</span>/script<span class="pl-k">&gt;</span>
+    <span class="pl-c">// server</span>
+        <span class="pl-k">var</span> murmurHash3 <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">"</span>murmurhash3js<span class="pl-pds">"</span></span>);</pre></div>
 
-<div class="highlight highlight-javascript"><pre><span class="c1">// Return a 32bit hash as a unsigned int:</span>
-<span class="o">&gt;</span> <span class="nx">murmurHash3</span><span class="p">.</span><span class="nx">x86</span><span class="p">.</span><span class="nx">hash32</span><span class="p">(</span><span class="s2">"I will not buy this record, it is scratched."</span><span class="p">)</span>
-  <span class="mi">2832214938</span>
+<div class="highlight highlight-javascript"><pre><span class="pl-c">// Return a 32bit hash as a unsigned int:</span>
+<span class="pl-k">&gt;</span> murmurHash3.x86.hash32(<span class="pl-s"><span class="pl-pds">"</span>I will not buy this record, it is scratched.<span class="pl-pds">"</span></span>)
+  <span class="pl-c1">2832214938</span>
 
-<span class="c1">// Return a 128bit hash as a unsigned hex:</span>
-<span class="o">&gt;</span> <span class="nx">murmurHash3</span><span class="p">.</span><span class="nx">x86</span><span class="p">.</span><span class="nx">hash128</span><span class="p">(</span><span class="s2">"I will not buy this tobacconist's, it is scratched."</span><span class="p">)</span>
-  <span class="s2">"9b5b7ba2ef3f7866889adeaf00f3f98e"</span>
-<span class="o">&gt;</span> <span class="nx">murmurHash3</span><span class="p">.</span><span class="nx">x64</span><span class="p">.</span><span class="nx">hash128</span><span class="p">(</span><span class="s2">"I will not buy this tobacconist's, it is scratched."</span><span class="p">)</span>
-  <span class="s2">"d30654abbd8227e367d73523f0079673"</span>
+<span class="pl-c">// Return a 128bit hash as a unsigned hex:</span>
+<span class="pl-k">&gt;</span> murmurHash3.x86.hash128(<span class="pl-s"><span class="pl-pds">"</span>I will not buy this tobacconist's, it is scratched.<span class="pl-pds">"</span></span>)
+  <span class="pl-s"><span class="pl-pds">"</span>9b5b7ba2ef3f7866889adeaf00f3f98e<span class="pl-pds">"</span></span>
+<span class="pl-k">&gt;</span> murmurHash3.x64.hash128(<span class="pl-s"><span class="pl-pds">"</span>I will not buy this tobacconist's, it is scratched.<span class="pl-pds">"</span></span>)
+  <span class="pl-s"><span class="pl-pds">"</span>d30654abbd8227e367d73523f0079673<span class="pl-pds">"</span></span>
 
-<span class="c1">// Specify a seed (defaults to 0):</span>
-<span class="o">&gt;</span> <span class="nx">murmurHash3</span><span class="p">.</span><span class="nx">x86</span><span class="p">.</span><span class="nx">hash32</span><span class="p">(</span><span class="s2">"My hovercraft is full of eels."</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
-  <span class="mi">2520298415</span>
+<span class="pl-c">// Specify a seed (defaults to 0):</span>
+<span class="pl-k">&gt;</span> murmurHash3.x86.hash32(<span class="pl-s"><span class="pl-pds">"</span>My hovercraft is full of eels.<span class="pl-pds">"</span></span>, <span class="pl-c1">25</span>)
+  <span class="pl-c1">2520298415</span>
 
-<span class="c1">// Rebind murmurHash3:</span>
-<span class="o">&gt;</span> <span class="nx">somethingCompletelyDifferent</span> <span class="o">=</span> <span class="nx">murmurHash3</span><span class="p">.</span><span class="nx">noConflict</span><span class="p">()</span>
-<span class="o">&gt;</span> <span class="nx">murmurHash3</span>
-  <span class="kc">undefined</span>
-<span class="o">&gt;</span> <span class="nx">somethingCompletelyDifferent</span><span class="p">.</span><span class="nx">version</span>
-  <span class="s2">"3.0.0"</span> <span class="c1">// get version</span>
-</pre></div>
+<span class="pl-c">// Rebind murmurHash3:</span>
+<span class="pl-k">&gt;</span> somethingCompletelyDifferent <span class="pl-k">=</span> murmurHash3.noConflict()
+<span class="pl-k">&gt;</span> murmurHash3
+  <span class="pl-c1">undefined</span>
+<span class="pl-k">&gt;</span> somethingCompletelyDifferent.<span class="pl-c1">version</span>
+  <span class="pl-s"><span class="pl-pds">"</span>3.0.1<span class="pl-pds">"</span></span> <span class="pl-c">// get version</span></pre></div>
 
 <h2>
-<a name="authors" class="anchor" href="#authors"><span class="octicon octicon-link"></span></a>Authors</h2>
+<a id="authors" class="anchor" href="#authors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors</h2>
 
 <ul>
-<li><a href="https://github.com/karanlyons/">Karan Lyons</a></li>
-<li><a href="https://github.com/pid/">Sascha Droste</a></li>
+<li>  <a href="https://github.com/karanlyons/">Karan Lyons</a>
+</li>
+<li>  <a href="https://github.com/pid/">Sascha Droste</a>
+</li>
 </ul>
 
 <h2>
-<a name="changlog" class="anchor" href="#changlog"><span class="octicon octicon-link"></span></a>Changlog</h2>
+<a id="changlog" class="anchor" href="#changlog" aria-hidden="true"><span class="octicon octicon-link"></span></a>Changlog</h2>
 
 <p><a href="https://github.com/pid/murmurHash3js/blob/master/CHANGELOG.md">CHANGLELOG.md</a></p>
 
 <h2>
-<a name="mit-license" class="anchor" href="#mit-license"><span class="octicon octicon-link"></span></a>MIT License</h2>
+<a id="mit-license" class="anchor" href="#mit-license" aria-hidden="true"><span class="octicon octicon-link"></span></a>MIT License</h2>
 
-<p>Copyright © 2012-2014 Karan Lyons, Sascha Droste</p>
+<p>Copyright © 2012-2015 Karan Lyons, Sascha Droste</p>
 
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
 
 <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
 
 <p>The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and non-infringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.</p>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Murmurhash3js maintained by <a href="https://github.com/pid">pid</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/pid/murmurHash3js">Murmurhash3js</a> is maintained by <a href="https://github.com/pid">pid</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
 
-    
+    </section>
 
+  
   </body>
 </html>
+
