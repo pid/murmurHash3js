@@ -1,4 +1,7 @@
-[![NPM version](https://badge.fury.io/js/murmurhash3js.png)](http://badge.fury.io/js/murmurhash3js) [![Build Status](https://travis-ci.org/pid/murmurHash3js.png)](https://travis-ci.org/pid/murmurhash3js)
+### Deprecated: This fork has been deprecated in favor of the original repository
+### Versions > 3.0.1 of the murmurhash3js npm package will now be published from https://github.com/karanlyons/murmurHash3.js
+
+
 
 MurmurHash3js
 =============
